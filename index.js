@@ -19,7 +19,8 @@ app.get("/result",(req, res)=>{
         data : {
             class : 10 ,
             sub : "Hindi" ,
-            marks : 85   
+            marks : 85   ,
+            result: "PASS"
         }
     })
 })
