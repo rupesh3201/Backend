@@ -1,7 +1,7 @@
 import express from 'express'
 
 const app = express();
-
+// app listing on something
 app.get("/home",(req, res)=>{
     res.send("hellow i'm on Home Page ")
 })
