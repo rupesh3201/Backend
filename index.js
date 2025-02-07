@@ -12,6 +12,17 @@ app.get("/about",(req, res)=>{
 app.get("/hi",(req, res)=>{
     res.send("Bye")
 })
+app.get("/result",(req, res)=>{
+    res.json({
+        sucess : true ,
+        message :" result ",
+        data : {
+            class : 10 ,
+            sub : "Hindi" ,
+            marks : 85   
+        }
+    })
+})
 const Port = 5001;
 app.listen(Port,()=>
 {
