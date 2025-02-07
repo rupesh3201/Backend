@@ -5,7 +5,7 @@ const app = express();
 app.get("/home",(req, res)=>{
     res.send("hellow i'm on Home Page ")
 })
-// get is method 
+// get is method  /about is route and endpoint
 app.get("/about",(req, res)=>{
     res.send("hellow i'm on About page ")
 })
