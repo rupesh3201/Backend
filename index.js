@@ -13,6 +13,7 @@ app.get("/hi",(req, res)=>{
     res.send("Bye")
 })
 app.get("/result",(req, res)=>{
+    console.log(req)
     res.json({
         sucess : true ,
         message :" result ",
