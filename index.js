@@ -1,8 +1,8 @@
 import express from 'express'
 
-const server = express();
-
-server.get("/hi",( req, res) =>{
-    res.send("hellow Our first server created good ")
+const app = express();
+const Port = 5001;
+app.listen(Port,()=>
+{
+    console.log(`server is running on ${Port}`);
 });
-server.listen(5000);
