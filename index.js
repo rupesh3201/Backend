@@ -4,8 +4,9 @@ const app = express();
 // app listing on something
 app.get("/home",(req, res)=>{
     console.log(req.query);
-
-    res.send("hellow i'm on Home Page ")
+    res.json({
+        message : `hellow ${req.query.name}`,
+    });
 })
 // get is method  /about is route and endpoint controller its has two objet req and res
 // app.get("/about",(req, res)=>{
@@ -39,3 +40,4 @@ app.listen(Port,()=>
 // why we use npm run dev 
 // log in postmon saved 
 // Working well creayted colletion fot all 
+// http://localhost:5001/home?name=panakj&age=21
