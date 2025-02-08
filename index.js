@@ -36,3 +36,4 @@ app.listen(Port,()=>
 
 // why we use npm run dev 
 // log in postmon
+// Working well creayted colletion fot all 
