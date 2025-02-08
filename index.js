@@ -5,7 +5,7 @@ const app = express();
 app.get("/home",(req, res)=>{
     console.log(req.query);
     res.json({
-        message : `hellow ${req.query.name} and your age is ${age}`,
+        message : `hellow ${req.query.name} `,
     });
 })
 // get is method  /about is route and endpoint controller its has two objet req and res
