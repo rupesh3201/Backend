@@ -3,8 +3,8 @@ import express from 'express'
 const app = express();
 // app listing on something
 app.get("/home",(req, res)=>{
-    console.log(req);
-    
+    console.log(req.query);
+
     res.send("hellow i'm on Home Page ")
 })
 // get is method  /about is route and endpoint controller its has two objet req and res
