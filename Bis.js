@@ -6,6 +6,7 @@ const Books = ["Rupesh", "Nilesh", "Harish"]
 app.get("/Student",(req, res)=>{
     console.log(req.query);
     res.json({
+        sucess : "true",
         message : `hellow ${req.query.name} `,
     });
 })
