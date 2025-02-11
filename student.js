@@ -7,6 +7,7 @@ app.get("/Student",(req, res)=>{
     console.log(req.query);
     res.json({
         sucess : true,
+        data : Studnet,
         message : `hellow ${req.query.Studnet} `,
     });
 })
