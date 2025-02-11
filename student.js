@@ -8,7 +8,7 @@ app.get("/Student",(req, res)=>{
     res.json({
         sucess : true,
         data : Studnet,
-        message : `hellow ${req.query.Studnet} `,
+        message : `Studnt fetch sucessfully  `,
     });
 })
 const port = 5001;
