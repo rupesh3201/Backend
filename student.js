@@ -6,7 +6,7 @@ const Studnet = ["Rupesh", "Nilesh", "Harish"];
 app.get("/Student",(req, res)=>{
     console.log(req.query);
     res.json({
-        sucess : "true",
+        sucess : true,
         message : `hellow ${req.query.Studnet} `,
     });
 })
