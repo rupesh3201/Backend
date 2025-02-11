@@ -1,13 +1,13 @@
 import express from 'express'
 
 const app = express();
-const Books = ["Rupesh", "Nilesh", "Harish"]
+const Studnet = ["Rupesh", "Nilesh", "Harish"];
 // app listing on something
 app.get("/Student",(req, res)=>{
     console.log(req.query);
     res.json({
         sucess : "true",
-        message : `hellow ${req.query.name} `,
+        message : `hellow ${req.query.Studnet} `,
     });
 })
 const port = 5001;
